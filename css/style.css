@@ -1,0 +1,293 @@
+@charset "UTF-8";
+/*! sanitize.css | CC0 Public Domain | github.com/jonathantneal/sanitize.css */
+pre,textarea{overflow:auto}
+[hidden],audio:not([controls]),template{display:none}
+details,main,summary{display:block}
+input[type=number]{width:auto}
+input[type=search]{-webkit-appearance:textfield}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+progress{display:inline-block}
+small{font-size:75%}
+textarea{resize:vertical}
+[unselectable]{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+*,::after,::before{box-sizing:inherit;border-style:solid;border-width:0}
+*{font-size:inherit;line-height:inherit;margin:0;padding:0}
+::after,::before{text-decoration:inherit;vertical-align:inherit}
+:root{-ms-overflow-style:-ms-autohiding-scrollbar;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%;box-sizing:border-box;cursor:default;font:16px/1.5 sans-serif;text-rendering:optimizeLegibility}
+a{text-decoration:none}
+audio,canvas,iframe,img,svg,video{vertical-align:middle}
+button,input,select,textarea{background-color:transparent;color:inherit;font-family:inherit;font-style:inherit;font-weight:inherit;min-height:1.5em}
+code,kbd,pre,samp{font-family:monospace,monospace}
+nav ol,nav ul{list-style:none}
+select{-moz-appearance:none;-webkit-appearance:none}
+select::-ms-expand{display:none}
+select::-ms-value{color:currentColor}
+table{border-collapse:collapse;border-spacing:0}
+::-moz-selection{background-color:#B3D4FC;text-shadow:none}
+::selection{background-color:#B3D4FC;text-shadow:none}
+@media screen{[hidden~=screen]{display:inherit}
+[hidden~=screen]:not(:active):not(:focus):not(:target){clip:rect(0 0 0 0)!important;position:absolute!important}
+}
+/*# sourceMappingURL=sanitize.css.map */
+
+body {
+    background-color: #000000;
+}
+
+.fireworks{
+    width: 0px;
+    height: 0px;
+    background-color: gray;
+    position: relative;
+    top:200px;
+    left: 50%;
+}
+.circle01{
+    /*border: purple 1px solid;*/
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+.circle02{
+    /*border: purple 1px solid;*/
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    display: none;
+}
+
+.circle03{
+    /*border: purple 1px solid;*/
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    position: absolute;
+    top:40px;
+    left: -60px;
+    display: none;
+}
+.circle01 .particle_01,.circle01 .particle_02,.circle01 .particle_03,.circle01 .particle_04,.circle01 .particle_05,.circle01 .particle_06,.circle01 .particle_07,.circle01 .particle_08{
+    background-color: #35C8B8;
+}
+.circle02 .particle_01,.circle02 .particle_02,.circle02 .particle_03,.circle02 .particle_04,.circle02 .particle_05,.circle02 .particle_06,.circle02 .particle_07,.circle02 .particle_08{
+    background-color: #FC635C;
+}
+.circle03 .particle_01,.circle03 .particle_02,.circle03 .particle_03,.circle03 .particle_04,.circle03 .particle_05,.circle03 .particle_06,.circle03 .particle_07,.circle03 .particle_08{
+    background-color: #B264ED;
+}
+.particle_01,.particle_02,.particle_03,.particle_04,.particle_05,.particle_06,.particle_07,.particle_08{
+    width: 6px;
+    height: 6px;
+    border-radius:  100px;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+.particle_01{
+    position: absolute;
+    animation-name: particle01;
+    top: -4px;
+    left: 6px;
+}
+.particle_02{
+    position: absolute;
+    animation-name: particle02;
+    top: -1px;
+    left: 13px;
+}
+.particle_03{
+    position: absolute;
+    animation-name: particle03;
+    top: 6px;
+    left: 15px;
+}
+.particle_04{
+    position: absolute;
+    animation-name: particle04;
+    top: 13px;
+    left: 13px;
+}
+.particle_05{
+    position: absolute;
+    animation-name: particle05;
+    top: 16px;
+    left: 6px;
+}
+.particle_06{
+    position: absolute;
+    animation-name: particle06;
+    top: 13px;
+    left: -1px;
+}
+.particle_07{
+    position: absolute;
+    animation-name: particle07;
+    top: 6px;
+    left: -4px;
+}
+.particle_08{
+    position: absolute;
+    animation-name: particle08;
+    top: -1px;
+    left: -1px;
+}
+
+@keyframes particle01{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: -50px;
+        margin-left: 0px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle02{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: -36px;
+        margin-left: 36px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle03{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: 0px;
+        margin-left: 50px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle04{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: 36px;
+        margin-left: 36px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle05{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle06{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: 35px;
+        margin-left: -35px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle07{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: 0px;
+        margin-left: -50px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
+@keyframes particle08{
+    0%{
+        margin-top: 0px;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        width: 10px;
+        height: 10px;
+    }
+    100%{
+        margin-top: -35px;
+        margin-left: -35px;
+        width: 0px;
+        height: 0px;
+        opacity: 0;
+    }
+}
